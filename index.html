@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Modo Claro y Oscuro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body class="light-mode"> 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mi Página</a>
+        <div class="ml-auto">
+            <button id="btn-light-mode" class="btn btn-outline-dark">Modo Claro</button>
+            <button id="btn-dark-mode" class="btn btn-outline-dark">Modo Oscuro</button>
+        </div>
+    </nav>
+    <div class="container text-center mt-5">
+        <h1 class="display-4">Bienvenidos a Mi Página Web</h1>
+        <img src="./Saludar.png" class="img-fluid mt-4" alt="Imagen de ejemplo" style="width: 450px; height: auto;">
+        
+
+        <table class="table table-striped custom-table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Juan Pérez</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Ana López</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Carlos García</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Script jQuery para cambiar el modo -->
+    <script>
+        $(document).ready(function() {
+            // Modo Claro
+            $("#btn-light-mode").click(function() {
+                $("body").removeClass("dark-mode").addClass("light-mode");
+            });
+
+            // Modo Oscuro
+            $("#btn-dark-mode").click(function() {
+                $("body").removeClass("light-mode").addClass("dark-mode");
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Estilo de Modo Claro */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Estilo de Modo Oscuro */
+body.dark-mode {
+    background-color: #1e1e2f;
+    color: #e0e0e0; 
+}
+
+.navbar.dark-mode {
+    background-color: #2d2d3a; 
+}
+
+.table-dark-mode {
+    background-color: #2d2d3a; 
+    color: #e0e0e0;
+}
+
+.custom-table {
+    margin-top: 20px;
+}
+
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e9e9ef;
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+body.dark-mode .thead-dark th {
+    background-color: #444455;
+    color: #e0e0e0; 
+}
